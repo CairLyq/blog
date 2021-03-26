@@ -22,8 +22,8 @@ Cair's private Blog
 
 ### 开发日志
 - 2021/03/26  
-引擎升级到 5.4.1 版本 需要更改 源码 eui.Group $hitTest() 
-[https://bbs.egret.com/thread-60744-1-1.html]
+引擎升级到 5.4.1 版本 需要更改 源码 eui.Group $hitTest() ,
+[eui.UILayer 的 touchEnabled 属性在 5.4.1 对比 5.4.0 版本有什么变化](https://bbs.egret.com/thread-60744-1-1.html)
 ```
 $hitTest(stageX: number, stageY: number): egret.DisplayObject {
             let target = super.$hitTest(stageX, stageY);
