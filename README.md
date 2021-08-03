@@ -1,6 +1,5 @@
 # blog
-Cair's private Blog
-
+新手上路指引
 
 ## 注意事项
 1. exml 文件中禁止使用多状态，用代码描述状态。
@@ -11,13 +10,6 @@ Cair's private Blog
 6. number 类型要改用 int , 明确是小数的用 float
 7. 坐标类型: IVec2 , IVec2Like   坐标实体: Vec2
 8. 常量用 const 定义 ,变量用 let
-9. 通用的接口添加到 interface.ts
-10. 编辑 i18n 文件时上锁 getLock , 提交之后会自动释放锁.  
-锁住状态表示有人在编辑,等待锁释放之后再进行编辑.
-11. ViewModel 中尽量少存变量，提供方法给外部使用，变量需要在 init 方法中重置。
-
-
-
 
 
 ### 开发日志
@@ -50,47 +42,6 @@ $hitTest(stageX: number, stageY: number): egret.DisplayObject {
             return null;
         }
 ```
-
-
-
-## src 文件夹释义
-
-- adapter                                   资源加载适配器
-- component                                 通用组件
-- data                                      常量及配表
-- extension                                 引擎扩展
-- module                                    子模块
-- scene                                     场景
-- sound                                     音效
-- utils                                     工具类
-- viewstrategy                              UI 策略
-- debug.ts                                  debug
-- interface.ts                              通用接口定义
-- Main.ts                                   程序入口
-
-
-## aplay 文件夹释义
-
-- data                                      配置,常量数据读取
-- logic                                     战斗演算逻辑
-- raid                                      副本,PVP数据
-- round                                     回合状态以及回合动作
-- state                                     状态机
-- unit                                      角色以及其他实体单位
-- Action.ts                                 龙骨动作
-- BattleMgr.ts                              全局战斗管理
-- FlutterMgr.ts                             战斗飘字管理
-- GameStateMgr.ts                           全局游戏状态机
-- UnitMgr.ts                                单位管理,创建以及回收单位
-- World.ts                                  世界实体渲染,每帧更新实体
-
-
-
-
-
-
-
-
 
 
 
